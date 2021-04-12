@@ -40,5 +40,5 @@ df[['latitude', 'longitude', 'altitude']] = pd.DataFrame(df['point'].to_list(), 
 # Save file
 df.to_csv(r'data/location_data.csv', index = False, header=True)
 
-print("Created CSV File")
+print("Created -- location_data.csv")
 
