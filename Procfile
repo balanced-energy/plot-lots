@@ -1,1 +1,1 @@
-web: gunicorn django_plot_lots/wsgi.py
+web: gunicorn django_plot_lots.wsgi.py
