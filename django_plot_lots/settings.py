@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-v(7j8ug7e45a*#d22a7irv!3=$75xib(7ne)iyy3i7gveqs$&5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['plotlots.herokuapp.com']
 
 
 # Application definition
