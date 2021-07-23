@@ -12,7 +12,7 @@ m = folium.Map(location=df[["latitude", "longitude"]].mean().to_list(), zoom_sta
 # Cluster close points, create a cluster overlay with MarkerCluster, add to m
 marker_cluster = MarkerCluster().add_to(m)
 
-# Create markets and assign popup and tooltip values
+# Create marks and assign popup and tooltip values
 # Add markets to the cluster
 for i, r in df.iterrows():
     location = (r["latitude"], r["longitude"])
