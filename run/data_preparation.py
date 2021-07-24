@@ -25,12 +25,12 @@ df['Full Address'] = df[df.columns[3:6]].apply(
 )
 
 # API REQUEST - Data Retrieval
-# Query location data for "Full Address" series
+# Query location run for "Full Address" series
 # Create 'location' column to store point (tuple) values
 print("API Request...In Progress")
 df['location'] = df['Full Address'].apply(locator.geocode)
 
-# Must be done before saving csv file, otherwise location.point data lost
+# Must be done before saving csv file, otherwise location.point run lost
 # Create point - latitude, longitude values
 df["point"] = df["location"].apply(lambda loc: tuple(loc.point) if loc else None)
 # Extract lat, lon, alt values
@@ -38,7 +38,7 @@ df[['latitude', 'longitude', 'altitude']] = pd.DataFrame(df['point'].to_list(), 
 
 
 # Save file
-df.to_csv(r'data/location_data.csv', index = False, header=True)
+df.to_csv(r'run/location_data.csv', index = False, header=True)
 
 print("Created -- location_data.csv")
 

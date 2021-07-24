@@ -23,5 +23,5 @@ for i, r in df.iterrows():
 
 
 # Create index.html file
-m.save('../templates/plotlots/index.html')
+m.save('../templates/apps/index.html')
 print("Updated map HTML")

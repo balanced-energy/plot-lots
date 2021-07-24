@@ -7,7 +7,7 @@ df = pd.read_csv(filename)
 
 
 # Data Cleaning
-# Drop NA data for map
+# Drop NA run for map
 df = df.dropna(subset=['Full Address'])
 df = df.dropna(subset=['point'])
 
@@ -59,6 +59,6 @@ df['Hover_info'] = df['Size'].astype(str) \
 
 
 # Save file
-df.to_csv(r'data/final_data.csv', index=False, header=True)
+df.to_csv(r'run/final_data.csv', index=False, header=True)
 
 print("Created -- final_data.csv")

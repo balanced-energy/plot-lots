@@ -25,7 +25,7 @@ SECRET_KEY = os.environ.get('PL_SECRET_KEY', 'django-insecure-v(7j8ug7e45a*#d22a
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get('DJANGO_DEBUG', '') != 'False'
 
-ALLOWED_HOSTS = ['plotlots.herokuapp.com']
+ALLOWED_HOSTS = ['apps.herokuapp.com']
 
 
 # Application definition
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'plotlots.apps.PlotlotsConfig',
+    'apps.apps.PlotlotsConfig',
 ]
 
 MIDDLEWARE = [

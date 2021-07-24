@@ -1,2 +1,2 @@
 # Plot-Lots
-Geocoding tax property auction addresses onto an interactive map.
+Geocodes county's yearly auctioned delinquent tax properties.
