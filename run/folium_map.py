@@ -10,6 +10,7 @@ df = pd.read_csv(csv_file)
 #m = folium.Map(location=df[["latitude", "longitude"]].mean().to_list(), zoom_start=2)
 m = folium.Map(location=df[["latitude", "longitude"]])
 
+# Test default zoom
 sw = df[["latitude", "longitude"]].min().values.tolist()
 ne = df[["latitude", "longitude"]].max().values.tolist()
 
